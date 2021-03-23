@@ -18,8 +18,8 @@ Start:
 	move.l #2,d1
 	move.l #Flength,d0
 	jsr AllocMem(a6)
-	cmp.l #Flength,d0
-	bgt.s OkAlloc
+	tst.l d0
+	bne.s OkAlloc
 	rts ;no free memory
 
 OkAlloc:	
