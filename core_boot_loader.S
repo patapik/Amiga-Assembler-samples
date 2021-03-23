@@ -11,11 +11,8 @@ start:
 	move.l #1024,$2c(a1) ;offset
 	move.l #100*512,$24(a1)  ;length 
 	move.w #2,$1c(a1)  ;read 
-	jsr -$1c8(a6)  ;DoIO
-	rts
-Buffer:
-	ds.w 150*512
-	
+	jsr -$1c8(a6)  ;DoIO -456(exec)
+	rts	
 end:
 
 
