@@ -1,4 +1,4 @@
-;The simples coper bar by Patapik 2021
+;The simples copper bar by Patapik 2021
 
 OpenLib		=-408
 CloseLib 	=-414
@@ -52,7 +52,7 @@ GBase:	dc.l    0
 
 cop1:
 		dc.l	$01800000  ; $dff180 set color
-Wait:		dc.l	$2c0ffffe  ;$1c the first visable screen line 
+Wait:		dc.l	$2c0ffffe  ; $1c the first visable screen line 
 		dc.l	$018008A0  ; $dff180 set color
 Wait2:		dc.l    $3f0ffffe
 		dc.l    $01800000
