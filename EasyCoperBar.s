@@ -1,4 +1,4 @@
-;The simples copper bar by Patapik 2021
+Simplest copper bar by Patapik 2021
 
 OpenLib		=-408
 CloseLib 	=-414
