@@ -1,3 +1,6 @@
+;moveq #0 should be there, but without the code is also working. 
+;120 bytes LONG 
+;61 bytes without relo-area / hunks. 
 
 	section "main", code
 
