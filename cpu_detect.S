@@ -1,3 +1,4 @@
+/* Gunnarolla 68080 CPU detection */
 	.text
 	.chip 68060
 	.align 4 
