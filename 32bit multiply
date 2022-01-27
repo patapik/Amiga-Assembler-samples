@@ -1,4 +1,4 @@
-; Universal m68000 multiply by Patapik 198x
+; Universal m68000 universal multiplication (c) Patapik 198x. 
 
         move.l      #2, d6    ; first digit
         move.l      #7, d7    ; second digit
@@ -9,18 +9,15 @@
         moveq       #0,d1
         moveq       #0,d2
 s1: 
-	      lsr.l       #1,d7          
+	lsr.l       #1,d7          
         bcc.s       s2     
         add.l       d6,d1          
-        addx.l      d2,d0
-                   
+        addx.l      d2,d0                   
 s2: 
-	      lsl.l       #1,d6          
+	lsl.l       #1,d6          
         roxl.l      #1,d2
         tst.l       d7         
         bne.s       s1
-
+-----------------------------------------------
 	;d1 result
-
-      
         rts
